@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><br><br><br><br><br><br><br>
+    <center style="border: thick solid rgb(0, 60, 255);padding: 70px; width: 150px; margin: auto;box-shadow: -5px 5px 30px  rgb(124, 124, 124);background-color: rgb(228, 228, 228);">
+        <br><br>
+        <input type="text" style="border-color: rgb(0, 0, 0); border-radius: 5px;" name="" id="scoreofuser" placeholder="        Enter Your Score"> <br><br>
+    <button onclick="checkGrade()" style=" border-radius: 4px;">Check Grade</button>
+    <script>
+        var userscore=0;
+        // function checkGrade(){
+        //     userscore= scoreofuser.value
+        //     if(userscore<40){
+        //     //     displayDiv.innerText= 'Failed'
+        //     //   displayDiv.style.backgroundColor = 'red'
+        //         alert ("F")
+        //     }else if(userscore>40&&userscore<70)
+        //     {
+        //         alert('C')
+        //     }else if(userscore>70){
+        //         alert('passed')
+        //     }
+        // }
+        
+
+        function checkGrade(){
+            // var userscore = Number(scoreofuser.value)
+            userscore= scoreofuser.value
+            if(userscore<0){
+                alert ("Error")
+            }else if(userscore<=40)
+            { 
+                 alert('F')
+            }else if(userscore>=40&&userscore<=51)
+            {
+                alert('D')
+            }else if(userscore>=52&&userscore<=65)
+            {
+                 alert('C')
+            }else if(userscore>=65&&userscore<=70)
+            {
+                 alert('B')
+            }else if(userscore>=70&&userscore<=100)
+            {
+                 alert('A')
+            }else if(userscore>=100)
+            {
+                 alert('Invalid!')
+            }
+        }
+    </script>
+    
+    </center>
+</body>
+</html>
